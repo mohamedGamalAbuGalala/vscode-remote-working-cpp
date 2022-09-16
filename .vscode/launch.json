@@ -2,13 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Main",
+            "name": "Launch Active File",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/main.out",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
@@ -19,7 +19,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Build Main"
+            "preLaunchTask": "C/C++: clang++ build active file"
         }
     ]
 }
